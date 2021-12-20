@@ -13,9 +13,9 @@ function App() {
         <div className="h-screen w-screen flex justify-center container">
             <div className="
              w-[376px] lg:w-[1440px]
-              bg-pale-blue overflow-auto relative
+             bg-pale-blue overflow-auto relative
              bg-pattern-mobile lg:bg-pattern-desktop
-              bg-left-top bg-no-repeat">
+             bg-left-top bg-no-repeat">
                 <div className="
                 font-red-hat-display
                 bg-white rounded-xl
@@ -24,8 +24,8 @@ function App() {
                 mx-auto overflow-hidden
                 shadow-card
                 flex flex-col items-center ">
-                    <img src={illustrationHeroUrl} className="" alt="Hero illustration"/>
-                    <div className="
+                    <header><img src={illustrationHeroUrl} className="" alt="Hero illustration"/></header>
+                    <article className="
                        py-6 px-6 lg:px-12 mt-2
                        flex flex-col items-center
                        gap-3 lg:gap-5
@@ -53,9 +53,14 @@ function App() {
                         ">
                             <img src={iconMusicUrl} alt=""/>
                             <div className="flex flex-col items-start gap-1">
-                                <div className="text-black font-black text-caption-md lg:text-caption-lg
-                                 mr-8 lg:mr-20">Annual Plan</div>
-                                <div className='text-caption-md lg:text-caption-lg text-desaturated-blue'>$59.99/year</div>
+                                <p className="
+                                text-black font-black text-caption-md lg:text-caption-lg
+                                 mr-8 lg:mr-20">
+                                    Annual Plan
+                                </p>
+                                <p className='text-caption-md lg:text-caption-lg text-desaturated-blue'>
+                                    $59.99/year
+                                </p>
                             </div>
 
                             <a href="#" className="text-bright-blue text-link-md underline font-bold">Change</a>
@@ -69,14 +74,14 @@ function App() {
                         ">
                             Proceed to Payment
                         </button>
-                        <div className="mt-2 mb-1 lg:mt-3 lg:mb-5">
+                        <button className="mt-2 mb-1 lg:mt-3 lg:mb-5">
                             <a className="
                         text-desaturated-blue font-black text-button
                         ">
                                 Cancel Order
                             </a>
-                        </div>
-                    </div>
+                        </button>
+                    </article>
                 </div>
             </div>
         </div>
