@@ -2,52 +2,81 @@ import {useState} from 'react'
 import logo from './logo.svg'
 import './App.css'
 
-import equilibriumUrl from '../images/image-equilibrium.jpg'
-import iconEthereumUrl from "../images/icon-ethereum.svg"
-import iconClockUrl from "../images/icon-clock.svg"
-import avatarUrl from "../images/image-avatar.png"
+import illustrationHeroUrl from "../images/illustration-hero.svg"
+import backgroundMobileUrl from "../images/pattern-background-mobile.svg"
+import backgroundDesktopUrl from "../images/pattern-background-desktop.svg"
+import iconMusicUrl from "../images/icon-music.svg"
 
 function App() {
 
     return (
-        <div className="bg-main-bg overflow-auto font-outfit h-screen w-screen">
-            <div className="bg-card-bg rounded-xl w-[327px]
-            lg:w-[350px] mx-auto m-16 mt-[152px] p-6
-            flex flex-col divide-y divide-line gap-[7px]
-            shadow-card">
-                <div className="mb-[15px]">
-                    <div className="bg-cyan rounded-xl">
-                        <img src={equilibriumUrl} className="rounded-xl
-                     lg:cursor-pointer lg:hover:opacity-50 lg:background-cyan"/>
-                    </div>
-                    <h1 className="
-                    text-white text-heading font-semibold mt-[22px]
-                    lg:hover:text-cyan lg:cursor-pointer
-                    ">Equilibrium #3429</h1>
+        <div className="h-screen w-screen flex justify-center container">
+            <div className="
+             w-[376px] lg:w-[1440px]
+              bg-pale-blue overflow-auto relative
+             bg-pattern-mobile lg:bg-pattern-desktop
+              bg-left-top bg-no-repeat">
+                <div className="
+                font-red-hat-display
+                bg-white rounded-xl
+                mt-[71px] w-[327px]
+                lg:mt-[102px] lg:w-[450px]
+                mx-auto overflow-hidden
+                shadow-card
+                flex flex-col items-center ">
+                    <img src={illustrationHeroUrl} className="" alt="Hero illustration"/>
+                    <div className="
+                       py-6 px-6 lg:px-12 mt-2
+                       flex flex-col items-center
+                       gap-3 lg:gap-5
+                       ">
+                        <h1 className="
+                           text-black font-red-hat-display text-heading font-black
+                           lg:text-heading-lg lg:mt-[13px]
+                          ">
+                            Order Summary
+                        </h1>
+                        <p className="
+                        lg:-mt-[1px]
+                      font-red-hat-display text-light-text text-center font-medium
+                      text-body-md lg:text-body-lg
+                      px-2 lg:px-7
+                    ">
+                            You can now listen to millions of songs, audiobooks, and podcasts on any
+                            device anywhere you like!
+                        </p>
 
-                    <div>
-                        <div className="text-soft-blue text-body font-light mt-[14px]">Our Equilibrium collection promotes
-                            balance
-                            and calm.
+                        <div className="
+                        w-full bg-very-pale-blue rounded-lg
+                        flex flex-row items-center justify-between
+                        p-[17px] lg:px-6 mt-3 lg:mt-0 lg:py-6
+                        ">
+                            <img src={iconMusicUrl} alt=""/>
+                            <div className="flex flex-col items-start gap-1">
+                                <div className="text-black font-black text-caption-md lg:text-caption-lg
+                                 mr-8 lg:mr-20">Annual Plan</div>
+                                <div className='text-caption-md lg:text-caption-lg text-desaturated-blue'>$59.99/year</div>
+                            </div>
+
+                            <a href="#" className="text-bright-blue text-link-md underline font-bold">Change</a>
                         </div>
 
-                        <div className="pt-[1px] flex flex-row justify-between mt-5 items-center">
-                            <div className="flex flex-row whitespace-nowrap gap-[7px]">
-                                <img className="object-contain" src={iconEthereumUrl}/>
-                                <div className="text-cyan text-caption inline font-semibold">0.041 ETH</div>
-                            </div>
-                            <div className="flex flex-row gap-[7px] pr-[3px]">
-                                <img className="object-contain" src={iconClockUrl}/>
-                                <div className="text-soft-blue  text-caption whitespace-nowrap">3 days left</div>
-                            </div>
+                        <button className="
+                        shadow-button rounded-lg
+                        bg-bright-blue text-white w-full
+                        mt-3
+                        font-black text-button p-4 py-[15px] lg:mt-3 lg:hover:bg-purple
+                        ">
+                            Proceed to Payment
+                        </button>
+                        <div className="mt-2 mb-1 lg:mt-3 lg:mb-5">
+                            <a className="
+                        text-desaturated-blue font-black text-button
+                        ">
+                                Cancel Order
+                            </a>
                         </div>
                     </div>
-                </div>
-
-                <div className="flex flex-row justify-start items-center gap-4 pt-4">
-                    <img className="w-[33px] border-white border border-1 rounded rounded-full"
-                         src={avatarUrl}/>
-                    <div className="text-soft-blue pb-[1px]">Creation of <span className="ml-[2px] cursor-pointer lg:hover:text-cyan text-white">Jules Wyvern</span></div>
                 </div>
             </div>
         </div>
