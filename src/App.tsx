@@ -30,12 +30,12 @@ function App() {
                        flex flex-col items-center
                        gap-3 lg:gap-5
                        ">
-                        <h1 className="
+                        <h2 className="
                            text-black font-red-hat-display text-heading font-black
                            lg:text-heading-lg lg:mt-[13px]
                           ">
                             Order Summary
-                        </h1>
+                        </h2>
                         <p className="
                         lg:-mt-[1px]
                       font-red-hat-display text-light-text text-center font-medium
