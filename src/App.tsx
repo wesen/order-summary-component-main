@@ -74,12 +74,10 @@ function App() {
                         ">
                             Proceed to Payment
                         </button>
-                        <button className="mt-2 mb-1 lg:mt-3 lg:mb-5">
-                            <a className="
+                        <button className="mt-2 mb-1 lg:mt-3 lg:mb-5
                         text-desaturated-blue font-black text-button
                         ">
-                                Cancel Order
-                            </a>
+                            Cancel Order
                         </button>
                     </article>
                 </div>
